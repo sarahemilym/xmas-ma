@@ -1,0 +1,38 @@
+* {
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+html {
+  font-size: 62.5%;
+  line-height: 62.5%;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  margin: 0;
+  padding: 0;
+}
+
+p,
+pre,
+blockquote,
+a,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+figure,
+fieldset {
+  margin: 0;
+  padding: 0;
+}

@@ -15,7 +15,7 @@ module.exports = env => {
     output: {
       path: path.resolve(__dirname, 'build'),
       publicPath: '/',
-      filename: 'main.js'
+      filename: '[name].[chunkhash].js'
     },
     devServer: {
       contentBase: './build'
@@ -34,6 +34,13 @@ module.exports = env => {
             'css-loader',
             'postcss-loader',
           ],
+        },
+        {
+          use: {
+            loader: 'babel-loader'
+          },
+          test: /\.js$/,
+          exclude: /node_modules/
         },
         {
           test: /\.svg$/,

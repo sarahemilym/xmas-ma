@@ -1,8 +1,6 @@
 import template from './index.twig';
-
-const test = 'test';
-
+import burgerMenu from './assets/svgs/burger-menu.svg';
 
 export default template({
-  test
+  burgerMenu,
 });

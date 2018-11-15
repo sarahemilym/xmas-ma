@@ -1,0 +1,123 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 95%;
+  position: fixed;
+
+  &__title {
+    position: fixed;
+    text-align: center;
+    align-self: center;
+
+    h1 {
+      font-family: 'Bai Jamjuree', sans-serif;
+      font-weight: 200;
+      text-align: center;
+      font-size: 4rem;
+      line-height: normal;
+      color: var(--color-gunmetal);
+      align-self: center;
+      margin: 10px 0 -12px;
+      position: relative;
+    }
+
+    span {
+      font-family: 'Bai Jamjuree', sans-serif;
+      font-weight: 200;
+      font-size: 1.8rem;
+    }
+  }
+
+  &__btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    position: absolute;
+    top: 16px;
+
+    @media (--tablet-portrait) {
+      display: none;
+    }
+
+    svg {
+      height: 20px;
+      width: 20px;
+    }
+
+    .burger-menu {
+      fill: var(--color-gunmetal);
+    }
+  }
+
+  &__nav {
+    padding-top: 4px;
+    display: none;
+    position: absolute;
+    top: 47px;
+    right: 16px;
+
+    @media (--tablet-portrait) {
+      right: auto;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 20px;
+      width: 100%;
+      position: absolute;
+      top: 84px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    &--open {
+      display: block;
+    }
+
+    &--fixed {
+      @media (--tablet-portrait) {
+        position: fixed;
+        top: 26px;
+      }
+    }
+  }
+
+  &__list {
+    list-style-type: none;
+  }
+
+  &__item {
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 1.6rem;
+    font-weight: light;
+    color: var(--color-gunmetal);
+    margin: 7px 0;
+    text-align: right;
+    cursor: pointer;
+    position: relative;
+
+    @media (--tablet-portrait) {
+      display: inline;
+      margin: 0 10px;
+    }
+
+    &:hover {
+      font-weight: bold;
+
+      &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -2px;
+        height: 2px;
+        background: var(--color-dust-storm);
+    }
+    }
+
+
+  }
+}

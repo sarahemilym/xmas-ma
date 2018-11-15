@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/sarahemilym/xmas-ma#readme",
   "devDependencies": {
+    "babel-loader": "^8.0.4",
     "clean-webpack-plugin": "^1.0.0",
     "css-loader": "^1.0.1",
     "css-mqpacker": "^7.0.0",

@@ -1,3 +1,8 @@
-h1 {
-  color: red;
-}
+/* Common */
+@import './common/_colors.css';
+@import './common/_breakpoints.css';
+@import './common/_common.css';
+/* Libs */
+@import './libs/normalize';
+/* Modules */
+@import '../modules/header/header.css';

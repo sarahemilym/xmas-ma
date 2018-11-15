@@ -1,4 +1,7 @@
 // CSS
 import '../css/styles.css';
 
-console.log('working');
+// JS
+import Header from '../modules/header/header';
+
+new Header();
