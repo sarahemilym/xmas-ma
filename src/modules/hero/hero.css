@@ -1,0 +1,86 @@
+.hero {
+  display: flex;
+  justify-content: space-around;
+  margin: 149px 30px 0;
+
+  &__text {
+    max-width: 35%;
+    font-family: 'Bai Jamjuree', sans-serif;
+    margin-top: 36px;
+
+    &-title {
+      font-weight: normal;
+      font-size: 2.6rem;
+      color: var(--color-cadet-grey);
+      margin-bottom: 12px;
+    }
+
+    &-dsc {
+      font-size: 1.4rem;
+      line-height: 1.5;
+      font-weight: 300;
+      color: var(--color-gunmetal);
+    }
+  }
+
+  &__btn {
+    border: 2px solid var(--color-dust-storm);
+    color: var(--color-dust-storm);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2rem;
+    letter-spacing: 2.5px;
+    padding: 2px 8px;
+    margin: 19px 0;
+    cursor: pointer;
+
+    &:hover {
+      background: rgba(234, 200, 202, .2);
+    }
+  }
+
+  &__img {
+    width: 475px;
+    height: 366px;
+    border: 2px solid var(--color-dust-storm);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    &::before {
+      content: "";
+      height: 2px;
+      width: 126%;
+      left: -13%;
+      /* top: 17px;
+      // left: -255px; */
+      background: var(--color-dust-storm);
+      position: absolute;
+      transform: rotate(37.5deg);
+      z-index: -1;
+    }
+
+    &::after {
+      content: "";
+      height: 2px;
+      width: 126%;
+      left: -13%;
+      /* top: 17px;
+      // left: -255px; */
+      background: var(--color-dust-storm);
+      position: absolute;
+      transform: rotate(-37.5deg);
+      z-index: -1;
+    }
+
+    p {
+      font-size: 2.6rem;
+      color: var(--color-dust-storm);
+      font-family: 'Bai Jamjuree', sans-serif;
+      position: relative;
+      background: white;
+      padding: 5px;
+    }
+  }
+}

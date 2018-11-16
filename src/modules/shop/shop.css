@@ -1,0 +1,62 @@
+.shop {
+  margin-top: 68px;
+
+  @media (--tablet-portrait) {
+    margin-top: 160px;
+  }
+
+  &__products {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0 20px;
+    margin: 0 auto;
+    max-width: 1096px;
+    justify-content: center;
+
+    &-item {
+      height: 300px;
+      width: 250px;
+      border: 1px solid black;
+      margin: 12px;
+      cursor: pointer;
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: none;
+        opacity: .7;
+        transition: background-color .3s ease-in-out;
+      }
+
+      &:hover {
+        &::after {
+          background-color: var(--color-black-shadows);
+          opacity: .7;
+        }
+      }
+
+      &-image {
+        height: 86%;
+        width: auto;
+        max-width: 100%;
+        display: block;
+        margin: 0 auto;
+      }
+
+      &-text {
+        position: absolute;
+        bottom: 6px;
+        right: 6px;
+        font-family: 'Bai Jamjuree', sans-serif;
+        font-weight: normal;
+        font-size: 1.8rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{% set images = ['https://ae01.alicdn.com/kf/HTB1ZnmsKFXXXXaLaXXXq6xXFXXXe/Pop-art-poster-cartoon-poster-canvas-painting-picture-animal-scenery-prints-giant-prints-animals-canvas-painting.jpg', 'https://img.artpal.com/63605/7-49-7t.jpg', 'https://i.pinimg.com/236x/05/6a/14/056a14b441864c297bf8870145dd4bad--deer-illustration-flower-illustrations.jpg', 'https://yt3.ggpht.com/a-/AN66SAyII4Ydktm5P8s0KEPvEohDxk-MUvxM7B0cEw=s900-mo-c-c0xffffffff-rj-k-no', 'https://pbs.twimg.com/profile_images/725998177623613441/WZPKpRNm_400x400.jpg', 'https://techflourish.com/images/book-clipart-black-and-white-14.png', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRC_Du1VaxZ11Gn6pD12A40ZbW1pcNsO48Z6g9MboICWcG4mK0B', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpgS-_5_2GliL1BOA7EOWMnOCvUGibBvHUGJSv11OSTcXx4I_r', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDfxn6bd3gn7_iptQmRjRgciuJkNSCFHufycSeIdG23bFrcpo40A', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyPT_vy9M6qRyHR1gHHaGj_5CZKMbgseGsclyk7kTdCCGXxuel', 'https://clipart4school.com/wp-content/uploads/2018/03/lion-bw-preview-510x510.jpg'] %}
+
+{% set productName = ['Zebra', 'Elephant', 'Deer', 'Lion', 'Panda', 'Whale', 'Penguin', 'Goat', 'Bee', 'Pig', 'Lion']%}
+
+<section class="shop">
+  <ul class="shop__products">
+    {% for i in 0..10 %}
+      <li class="shop__products-item">
+        <img class="shop__products-item-image" src="{{ images[i] }}" />
+      
+        <p class="shop__products-item-text">{{ productName[i] }}</p>
+      </li>
+    {% endfor %}
+  </ul>
+</section>
