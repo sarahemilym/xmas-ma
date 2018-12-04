@@ -1,7 +1,7 @@
 <header class="header">
 <div class="header__title">
   <h1>
-    <a href="/">handmade</a>  
+    <a href="/">handmade</a>
   </h1>
 </div>
   <button class="header__btn header__btn--active">{{ burgerMenu }}</button>
@@ -17,8 +17,27 @@
     </li>
   </ul>
   <ul class="header__right header__list">
-    <li class="header__item">
-      <a href="">Search</a>
+    <li class="header__item header__item--search">
+      <a href="" class="header__item header__item--search-text">Search</a>
+      {# <svg height="40" width="40" class="header__item--search-svg">
+      <g>
+        <rect rx="60" ry="10" y="20" x="20" height="40" width="40"></rect>
+      </g>
+        {# <circle id="search-svg" cx="20" cy="20" rx="60" ry="10" stroke="black" stroke-width="2" fill="white" /> #}
+      {# </svg> #}
+      
+
+{# <svg height="26" viewBox="0 0 156 26" width="156" xmlns="http://www.w3.org/2000/svg" class="header__item--search-svg">
+  <rect id="search-svg" fill="none" height="24" rx="8" stroke="#000" stroke-width="2" width="5" x="1" y="1"/>
+  </svg> #}
+  <div class="header__item--search-container">
+    {# <svg enable-background="new 0 0 100 100" id="Layer_1" version="1.1" viewBox="0 0 100 100" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path clip-rule="evenodd" d="M64.5,44.6c0-11.6-9.4-20.9-20.9-20.9c-11.6,0-20.9,9.4-20.9,20.9  c0,11.6,9.4,20.9,20.9,20.9C55.1,65.6,64.5,56.2,64.5,44.6z M80,79.3l-1.8,1.8l-19-19c-4.2,3.7-9.6,6-15.7,6  c-13,0-23.5-10.5-23.5-23.5c0-13,10.5-23.5,23.5-23.5c13,0,23.5,10.5,23.5,23.5c0,6-2.3,11.5-6,15.7L80,79.3z" fill="#231F20" fill-rule="evenodd"/></svg> #}
+
+    <svg class="close" id="search-close" height="48" viewBox="0 0 48 48" width="48" xmlns="http://www.w3.org/2000/svg"><path d="M38 12.83l-2.83-2.83-11.17 11.17-11.17-11.17-2.83 2.83 11.17 11.17-11.17 11.17 2.83 2.83 11.17-11.17 11.17 11.17 2.83-2.83-11.17-11.17z"/><path d="M0 0h48v48h-48z" fill="none"/></svg>
+
+    <svg class="search" id="search" height="16px" id="Layer_1" style="enable-background:new 0 0 16 16;" version="1.1" viewBox="0 0 16 16" width="16px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M15.7,14.3l-3.105-3.105C13.473,10.024,14,8.576,14,7c0-3.866-3.134-7-7-7S0,3.134,0,7s3.134,7,7,7  c1.576,0,3.024-0.527,4.194-1.405L14.3,15.7c0.184,0.184,0.38,0.3,0.7,0.3c0.553,0,1-0.447,1-1C16,14.781,15.946,14.546,15.7,14.3z   M2,7c0-2.762,2.238-5,5-5s5,2.238,5,5s-2.238,5-5,5S2,9.762,2,7z"/></svg>
+    <input type="text" class="header__item--search-textbox" placeholder="What are you looking for?">
+  </div>
     </li>
     <li class="header__item">
       <a href="">Cart</a>
