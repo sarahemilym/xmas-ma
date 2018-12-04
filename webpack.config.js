@@ -53,6 +53,10 @@ module.exports = env => {
         name: 'index.html',
         template: './src/index.twig.js',
       }),
+      new HtmlWebpackPlugin({
+        filename: 'browse.html',
+        template: './src/browse.twig',
+      }),
       new MiniCssExtractPlugin({
         filename: devMode ? 'style.css' : 'style.[hash].css'
       }),

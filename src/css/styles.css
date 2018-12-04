@@ -12,14 +12,14 @@
 
 .base-strip {
   width: 100%;
-  /* height: 300px; */
   background: var(--color-dust-storm);
   position: relative;
-  /* bottom: 30px; */
-  /* position: absolute; */
   opacity: .6;
   margin-top: 70px;
   max-height: 340px;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 40px;
 
   &-inner {
     background: var(--color-cadet-grey);
@@ -29,5 +29,11 @@
     height: 302px;
     top: -61px;
     width: 451px;
+  }
+
+  &__text {
+    font-size: 6rem;
+    color: white;
+    font-family: var(--font-main);
   }
 }

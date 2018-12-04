@@ -5,7 +5,7 @@
 
   &__text {
     max-width: 35%;
-    font-family: 'Bai Jamjuree', sans-serif;
+    font-family: var(--font-main);
     margin-top: 36px;
 
     &-title {
@@ -77,7 +77,7 @@
     p {
       font-size: 2.6rem;
       color: var(--color-dust-storm);
-      font-family: 'Bai Jamjuree', sans-serif;
+      font-family: var(--font-main);
       position: relative;
       background: white;
       padding: 5px;
